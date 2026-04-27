@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CURRICULO DE ALAN SIMÕES DOS SANTOS</title>
+    <style>
+        /* Estilização geral para cor da fonte e botões */
+        body {
+            color: white; /* Define a cor de toda a fonte como branca */
+            background-image: url('fundo.jpg'); 
+            background-size: cover;
+            font-family: sans-serif; /* Uma fonte mais limpa para leitura */
+        }
+
+        /* Estilização dos links para que não fiquem azuis/roxos e sumam no fundo */
+        a {
+            color: #add8e6; /* Um azul claro para destacar links no fundo escuro */
+            text-decoration: underline;
+        }
+
+        #botaoAudio {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #fff; /* Fundo branco para o botão contrastar */
+            color: #111;      /* Ícone preto */
+            border: none;
+            padding: 10px 12px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">CURRÍCULO ALAN SIMÕES</h1>
+
+    <center><img src="alan.jpg" width="10%"></center>
+
+    <marquee><h2> ALAN SIMÕES DOS SANTOS</h2></marquee>
+
+    <hr>
+
+    <h3><i>DADOS PESSOAIS:</i></h3>
+
+    <ul>
+        <li><h3>ENDEREÇO: RUA AMÉLIO FERREIRA BATISTA, N 174</h3></li>
+        <li><h3>CELULAR: <a href="tel:+5575999086079">75 999086079</a></h3></li>
+        <li><h3>EMAIL: <a href="mailto:alansimoes2007@gmail.com">alansimoes2007@gmail.com</a></h3></li>
+    </ul>
+
+    <hr>
+
+    <h3><i>ESCOLARIDADE:</i></h3>
+    <ul>
+        <li><h3>SISTEMAS DE INFORMAÇÃO - <a href="https://www.fsssacramento.br/" target="_blank">F.S.S.S</a> - EM CURSO</h3></li>
+        <li><h3>ENSINO MÉDIO - 2022-2024</h3></li> 
+    </ul>
+
+    <hr>
+
+    <h3><i>CURSOS EXTRAS:</i></h3>
+    <ul>
+        <li><h3><a href="https://www.ev.org.br/" target="_blank">WORD BÁSICO - FUNDAÇÃO BRADESCO - 8 HORAS</a></h3></li>
+        <li><h3><a href="https://www.ev.org.br/" target="_blank">EXCEL BÁSICO - FUNDAÇÃO BRADESCO - 8 HORAS</a></h3></li> 
+    </ul>
+
+    <hr>
+
+    <h3><i>EXPERIÊNCIAS PROFISSIONAIS:</i></h3>
+    <ul>
+        <li><h3>JOVEM APRENDIZ - <a href="https://rafitec.com.br/" target="_blank">RAFITEC SOLUÇÕES EM PLÁSTICOS Ltda.</a> (Filial Esplanada/BA) - ATUAL</h3></li>
+    </ul>
+
+    <audio id="musica" autoplay loop muted>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="botaoAudio" onclick="toggleAudio()">🔇</button>
+
+    <script>
+    function toggleAudio() {
+        var audio = document.getElementById("musica");
+        var botao = document.getElementById("botaoAudio");
+
+        audio.muted = !audio.muted;
+
+        if (audio.muted) {
+            botao.innerHTML = "🔇";
+        } else {
+            botao.innerHTML = "🔊";
+        }
+    }
+    </script>
+
+</body>
+</html>
